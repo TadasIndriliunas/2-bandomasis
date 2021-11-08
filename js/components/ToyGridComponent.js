@@ -7,8 +7,11 @@ class ToyGridComponent {
     this.init();
   }
 
+  fetchToys = () => API.getToy(this.saveToys, this.showError);
+
   init = () => {
-    API.getToys(this.saveToys, this.showError);
+    this.fetchToys();
+    this.htmlElement.className = 'row g-3 justify-content-center';
     this.render();
   }
 
@@ -25,9 +28,12 @@ class ToyGridComponent {
 
   render = () => {
     if (this.state.toys.length === 0) {
-      this.htmlElement.innerHTML = 'NĖRA DUOMENŲ';
+      this.htmlElement.innerHTML = '<img src="assets/loading.gif" style="width: 256px" />';
     } else {
-      this.htmlElement.innerHTML = '<pre>' + JSON.stringify(this.state.toys) + '</pre>';
+      this.htmlElement.innerHTML = '';
+      const cardComponents = this.state.toys.map(cardProps => new ToyCardComponent(cardProps));
+      const cardElements = cardComponents.map(component => component.htmlElement);
+      this.htmlElement.append(...cardElements);
     }
   }
 }

@@ -7,7 +7,7 @@ class API {
         .then(res => res.json())
         .then(success)
         .catch(failure)
-    }, 1000);
+    }, 2000);
   }
 
   static deleteToy = (id, success, failure) => {
