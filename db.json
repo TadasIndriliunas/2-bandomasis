@@ -1,51 +1,36 @@
 {
-"Toy": [{
-  "id": "0",
-  "title": "Pikachu",
-  "price": {
-    "currency": "€",
-    "amount": "30"
-  },
-  "ageRestrictions": {
-    "from": null
-  },
-  "discount": {
-    "type": "percentage",
-    "amount": "1"
-  },
-  "imgSrc": "https://jazwaresv2.s3.amazonaws.com/media/POKEMON_PIKACHU_OK.png"
-},
-{
-  "id": "1",
-  "title": "Fidget Spinner",
-  "price": {
-    "currency": "€",
-    "amount": "10"
-  },
-  "ageRestrictions": {
-    "from": "3"
-  },
-  "discount": {
-    "type": "percentage",
-    "amount": "20"
-  },
-  "imgSrc": "https://trenk.lt/26752-large_default/suktukas-fidget-spinner.jpg"
-},
-{
-  "id": "2",
-  "title": "Rocking Horse",
-  "price": {
-    "currency": "€",
-    "amount": "50"
-  },
-  "ageRestrictions": {
-    "from": "2"
-  },
-  "discount": {
-    "type": "percentage",
-    "amount": "15"
-  },
-  "imgSrc": "https://cdn.shopify.com/s/files/1/0471/1464/9768/products/46093_JR602__67728_741x700.png?v=1615452615"
-}
-]
+  "Toy": [
+    {
+      "id": "0",
+      "title": "Pikachu",
+      "price": {
+        "currency": "€",
+        "amount": "30"
+      },
+      "ageRestrictions": {
+        "from": null
+      },
+      "discount": {
+        "type": "percentage",
+        "amount": "1"
+      },
+      "imgSrc": "https://jazwaresv2.s3.amazonaws.com/media/POKEMON_PIKACHU_OK.png"
+    },
+    {
+      "id": "2",
+      "title": "Rocking Horse",
+      "price": {
+        "currency": "€",
+        "amount": "50"
+      },
+      "ageRestrictions": {
+        "from": "2"
+      },
+      "discount": {
+        "type": "percentage",
+        "amount": "15"
+      },
+      "imgSrc": "https://cdn.shopify.com/s/files/1/0471/1464/9768/products/46093_JR602__67728_741x700.png?v=1615452615"
+    }
+  ]
 }
