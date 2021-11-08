@@ -5,4 +5,4 @@ node.js
 npm i json-server
 
 # Run server
--json-server --watch db.json
+json-server --watch db.json
